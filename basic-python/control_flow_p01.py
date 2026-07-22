@@ -97,15 +97,13 @@ while True:
         break
 
     num += 1
-# Exercise 2.7: Collatz sequence
-# A Collatz sequence is formed as follows: We start with some number x0, and we find the next number in the sequence by
-# xi+1 =
-# (
-# xi/2 if xi
-# is even
-# 3xi + 1 if xi is odd
-# If xi = 1, we stop iterating and have found the full sequence.
 
+# Exercise 2.7: Collatz sequence
+# A Collatz sequence is formed as follows: 
+# We start with a given number x0, and find the next number in the sequence using the rule:
+#   x_(i+1) = x_i / 2      if x_i is even
+#   x_(i+1) = 3 * x_i + 1  if x_i is odd
+# If x_i reaches 1, we stop iterating as the sequence is complete.
 
 x = 103
 print(x)
