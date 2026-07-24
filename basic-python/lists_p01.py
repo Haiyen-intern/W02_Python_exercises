@@ -170,12 +170,12 @@ print("Pairs[i,j] with i < j:", pairs_less)
 # (c) Generate a list with elements i + j with both i and j prime and i > j.
 primes_sum = [
     i + j
-    for i in range(1, n + 1)
     for j in range(1, n + 1)
-    if is_prime_optimized(i) and is_prime_optimized(j) and i > j
+    for i in range(j + 1, n + 1)
+    if is_prime_optimized(i) and is_prime_optimized(j)
 ]
-print("Sum of primes i + j with i > j:", primes_sum)
 
+print("Sum of primes i + j with i > j:", primes_sum)
 
 # (d) Write a function that evaluates an arbitrary polynomial a0 + a1x + a2x2 + . . . + anxn using a list comprehension
 def evaluate_polynomial(x, coefs):
